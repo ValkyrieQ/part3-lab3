@@ -8,13 +8,15 @@ import { Product } from '../model/product';
 })
 export class ProductItemComponent implements OnInit {
   @Input() product: Product;
-  @Output() OnSelected: EventEmitter<Product> = new EventEmitter();
+  @Output() OnSelected: EventEmitter<ProductItemComponent> = new EventEmitter();
+
+  isSelected: boolean;
 
   constructor() {}
 
   ngOnInit(): void {}
 
   select() {
-    this.OnSelected.emit(this.product);
+    this.OnSelected.emit(this);
   }
 }
