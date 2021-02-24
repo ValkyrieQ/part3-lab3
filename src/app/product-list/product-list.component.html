@@ -1,8 +1,5 @@
-<div>
-  <h2>Product List</h2>
-  <app-product-item
-    *ngFor="let pd of products"
-    [product]="pd"
-    (OnSelected)="selectedProduct($event)"
-  ></app-product-item>
-</div>
+<app-product-item
+  *ngFor="let pd of products"
+  [product]="pd"
+  (OnSelected)="selectedProduct($event)"
+></app-product-item>
