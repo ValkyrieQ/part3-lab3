@@ -3,10 +3,9 @@ import { CommonModule } from '@angular/common';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { PanelComponent } from './panel/panel.component';
-import { CatalogComponent } from './catalog.component';
 
 @NgModule({
-  declarations: [ProductListComponent, ProductItemComponent, PanelComponent, CatalogComponent],
+  declarations: [ProductListComponent, ProductItemComponent, PanelComponent],
   imports: [CommonModule],
   exports: [ProductListComponent],
 })
